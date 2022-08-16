@@ -3,6 +3,7 @@
 @use "../mixin/" as m;
 
 .primary-header {
+  position: fixed;
   display: flex;
   @include u.breakpoint-up(small) {
   }
@@ -85,6 +86,7 @@
     align-items: baseline;
     grid-column: span 1/4;
     padding: 0;
+    background-color: rgba(255, 0, 0, 0);
   }
 }
 .nav-menu {
@@ -129,6 +131,14 @@ button.accordion {
 .features ul,
 .company ul {
   display: none;
+  background-color: hsl(var(--white));
+  box-shadow: 0;
+  border-radius: 0;
+  padding: u.rem(10);
+  @include u.breakpoint-up(small) {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: u.rem(10);
+  }
 }
 .dropmenu-1 li,
 .dropmenu-2 li {
