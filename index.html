@@ -24,21 +24,17 @@
       <div class="col-2">
         <ul class="nav-menu">
           <li class="features">
-            <div class="dropdown">
-              <button class="dropbtn">Features
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Todo List</a>
-                <a href="#">Calendar</a>
-                <a href="#">Reminders</a>
-                <a href="#">Planning</a>
-              </div>
-            </div>
+            <button class="accordion">Features</button>
+            <ul class="dropmenu-1" aria-label="submenu">
+              <li>Todo List</li>
+              <li>Calendar</li>
+              <li>Reminders</li>
+              <li>Planning</li>
+            </ul>
           </li>
           <li class="company">
-            <a href="#">Company</a>
-            <ul aria-label="submenu">
+            <button class="accordion">Company</button>
+            <ul class="dropmenu-2" aria-label="submenu">
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
@@ -53,9 +49,8 @@
         </div>
       </div>
     </nav>
-
   </header>
-  <main class="container padding-block-600">
+  <main class="container padding-block-900">
     <div class="grid-hero gap-3">
       <section class="hero-info flow padding-block-600 padding-lr-400 ">
         <h1>Make remote work</h1>
