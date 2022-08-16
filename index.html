@@ -13,46 +13,50 @@
 </head>
 
 <body>
-  <header class="primary-header container padding-block-600 padding-lr-400">
-    <picture>
-      <img src="./images/logo.svg" alt="logo" class="logo">
-    </picture>
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
-        aria-expanded="false">Menu</span></button>
-    <nav class="primary-navigation" id="primary-navigation" data-visible="false">
-      <div class="col-1"></div>
-      <div class="col-2">
-        <ul class="nav-menu">
-          <li class="features">
-            <button class="accordion">Features</button>
-            <ul class="dropmenu-1" aria-label="submenu">
-              <li>Todo List</li>
-              <li>Calendar</li>
-              <li>Reminders</li>
-              <li>Planning</li>
-            </ul>
-          </li>
-          <li class="company">
-            <button class="accordion">Company</button>
-            <ul class="dropmenu-2" aria-label="submenu">
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          </li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-        <div class="nav-buttons">
-          <button class="btn login">Login</button>
-          <button class="btn register">Register</button>
+  <header class="container  ">
+    <div class="primary-header padding-block-600 padding-lr-400">
+      <picture>
+        <img src="./images/logo.svg" alt="logo" class="logo">
+      </picture>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+          aria-expanded="false">Menu</span></button>
+      <nav class="primary-navigation" id="primary-navigation" data-visible="false">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <ul role="list" class="nav-menu">
+            <li role="listitem  " class="features">
+              <button class="accordion">Features</button>
+              <ul role="list" class="dropmenu-1" aria-label="submenu">
+                <li role="listitem"><a href="#">Todo List</a></li>
+                <li role="listitem"><a href="#">Calendar</a></li>
+                <li role="listitem"><a href="#">Reminders</a></li>
+                <li role="listitem"><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li role="listitem" class="company">
+              <button class="accordion">Company</button>
+              <ul class="dropmenu-2" aria-label="submenu">
+                <li role="listitem"><a href="#">History</a></li>
+                <li role="listitem"><a href="#"></a>Our Team</li>
+                <li role="listitem"><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">About</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <button class="btn login">Login</button>
+            <button class="btn register">Register</button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+   
+    </div> 
+  
   </header>
   <main class="container padding-block-900">
     <div class="grid-hero gap-3">
-      <section class="hero-info padding-block-600 padding-lr-400 ">
+      <section class="hero-info padding-block-600 padding-lr-600">
         <div class="flow">
           <h1>Make <br> remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes,

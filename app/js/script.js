@@ -41,3 +41,16 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/**
+ * Navbar scroll change color
+ */
+const navbar = document.querySelector(".primary-header");
+window.onscroll = () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("nav-active");
+  } else {
+    navbar.classList.remove("nav-active");
+  }
+};
+

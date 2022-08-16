@@ -4,9 +4,18 @@
 
 .primary-header {
   position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
   display: flex;
-  @include u.breakpoint-up(small) {
-  }
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.nav-active {
+  transition: 0.3s ease-in-out;
+  background-color: hsl(var(--white));
+  border-radius: 0 0px 8px 8px;
 }
 .primary-header picture {
   max-width: u.rem(100);
@@ -24,7 +33,7 @@
   position: absolute;
   z-index: 2000;
   right: 1rem;
-  top: 2rem;
+  top: 1rem;
   background: transparent;
   background-image: url(/images/icon-menu.svg);
   background-repeat: no-repeat;
@@ -32,6 +41,7 @@
   width: 1.5rem;
   aspect-ratio: 1;
   border: 0;
+  transition: 0.4s ease-out;
 
   @include u.breakpoint-up(small) {
     display: none;
@@ -40,6 +50,7 @@
 
 .mobile-nav-toggle[aria-expanded="true"] {
   background-image: url(/images/icon-close-menu.svg);
+  transform: rotate(-360deg);
 }
 
 .mobile-nav-toggle:focus-visible {
@@ -86,7 +97,7 @@
     align-items: baseline;
     grid-column: span 1/4;
     padding: 0;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: transparent;
   }
 }
 .nav-menu {
@@ -119,7 +130,7 @@
  */
 button.accordion {
   border: 0;
-  background-color: hsl(var(--white));
+  background-color: transparent;
   color: hsl(var(--medium-gray));
   font-size: u.rem(18);
   margin-bottom: u.rem(10);
@@ -188,5 +199,6 @@ button.register {
   }
 }
 button.login {
+  background-color: transparent;
   outline: 0;
 }

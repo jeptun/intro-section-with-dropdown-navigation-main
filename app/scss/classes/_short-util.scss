@@ -12,8 +12,8 @@
 .clr-white {
   color: hsl(var(--white));
 }
-.bg-black{
-  background-color: hsl(var(--black));;
+.bg-black {
+  background-color: hsl(var(--black));
 }
 /**
  * Position
@@ -36,13 +36,13 @@
 /**
  * ### Flex 
  */
-.flex{
+.flex {
   display: flex;
 }
-.flex-dir-col{
-flex-direction: column;
+.flex-dir-col {
+  flex-direction: column;
 }
-.justify-cont-betw{
+.justify-cont-betw {
   justify-content: space-between;
 }
 /**
@@ -60,22 +60,22 @@ flex-direction: column;
 /**
  * ### Gap 
  */
-.gap-1{
+.gap-1 {
   gap: 1rem;
 }
-.gap-2{
+.gap-2 {
   gap: 2rem;
 }
-.gap-3{
+.gap-3 {
   gap: 3rem;
 }
 /**
  * Float
  */
-.float-l{
+.float-l {
   float: left;
 }
-.float-r{
+.float-r {
   float: right;
 }
 /**
@@ -124,6 +124,12 @@ flex-direction: column;
 /**
  * Padding top and bottom
  */
+.padding-block-400 {
+  padding-block: g.$size-400;
+}
+.padding-block-500 {
+  padding-block: g.$size-500;
+}
 .padding-block-600 {
   padding-block: g.$size-600;
 }
@@ -157,11 +163,11 @@ flex-direction: column;
 }
 //For menu button
 .sr-only {
-  position: absolute; 
+  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
-  margin: -1px; 
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
