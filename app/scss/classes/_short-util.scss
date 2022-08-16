@@ -113,7 +113,7 @@ flex-direction: column;
  * inline style --> style="--flow-spacer: 1.5rem"
  */
 :where(.flow :not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
+  margin-top: var(--flow-spacer, 3em);
 }
 /**
  * ### Margin Padding position
