@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/478f25d40c.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+  <header class="primary-header container padding-block-600 padding-lr-400">
+    <picture>
+      <img src="./images/logo.svg" alt="logo" class="logo">
+    </picture>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
+    <nav class="primary-navigation" id="primary-navigation" data-visible="false">
+      <div class="col-1"></div>
+      <div class="col-2">
+        <ul class="nav-menu">
+          <li class="features">
+            <div class="dropdown">
+              <button class="dropbtn">Features
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Todo List</a>
+                <a href="#">Calendar</a>
+                <a href="#">Reminders</a>
+                <a href="#">Planning</a>
+              </div>
+            </div>
+          </li>
+          <li class="company">
+            <a href="#">Company</a>
+            <ul aria-label="submenu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="btn login">Login</button>
+          <button class="btn register">Register</button>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main class="container padding-block-600">
+    <div class="grid-hero gap-3">
+      <section class="hero-info flow padding-block-600 padding-lr-400 ">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button class="btn hero-btn">Learn more</button>
+        <div class="logos-container">
+          <picture>
+            <img src="./images/client-databiz.svg" alt="client-databiz logo">
+          </picture>
+          <picture>
+            <img src="./images/client-audiophile.svg" alt="client-audiophile logo">
+          </picture>
+          <picture>
+            <img src="./images/client-meet.svg" alt="client-meet logo">
+          </picture>
+          <picture>
+            <img src="./images/client-maker.svg" alt="client-maker logo">
+          </picture>
+        </div>
+      </section>
+      <aside class="hero-image">
+        <picture>
+          <source media="(min-width: 730px)" srcset="./images/image-hero-desktop.png">
+          <img src="./images/image-hero-mobile.png" alt="image-hero-mobile">
+        </picture>
+      </aside>
+    </div>
+  </main>
+  <script src="./dist/script.js"></script>
+</body>
+
+</html>

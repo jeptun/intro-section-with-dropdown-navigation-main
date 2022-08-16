@@ -1,0 +1,88 @@
+@use "../globals/" as g;
+@use "../util/" as u;
+@use "../mixin/" as m;
+
+.grid-hero {
+  display: grid;
+  @include u.breakpoint-up(small) {
+    align-content: space-around;
+    place-items: center;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+        1rem,
+        1fr
+      );
+  }
+}
+.grid-hero > *:first-child {
+  grid-column: 1;
+  grid-row: 2;
+  @include u.breakpoint-up(small) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+.grid-hero > *:last-child {
+  grid-column: 1;
+  grid-row: 1;
+  @include u.breakpoint-up(small) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+}
+
+.hero-image picture {
+  width: 100%;
+}
+
+section.hero-info {
+  text-align: center;
+
+  @include u.breakpoint-up(small) {
+    text-align: left;
+  }
+}
+h1 {
+  font-size: clamp(u.rem(28), u.rem(22) + 4vw, u.rem(100));
+  font-weight: 700;
+}
+p {
+  margin: 0 auto;
+  color: hsl(var(--medium-gray));
+
+  @include u.breakpoint-up(small) {
+    margin: 0;
+  }
+}
+section button.hero-btn {
+  color: hsl(var(--white));
+  background-color: hsl(var(--black));
+  border-radius: u.rem(12);
+  transition: 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: hsl(var(--black));
+    outline: 1px solid hsl(var(--black));
+    background-color: hsl(var(--white));
+  }
+}
+.logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: u.rem(30);
+  width: 100%;
+}
+.logos-container picture {
+  max-width: 100px;
+  @include u.breakpoint-up(small) {
+    max-width: 200px;
+  }
+}
+
+.logos-container picture img {
+  width: 100%;
+  height: auto;
+  outline: 2px solid purple;
+}

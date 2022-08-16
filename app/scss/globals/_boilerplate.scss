@@ -1,0 +1,27 @@
+@use "variables" as v;
+@use "../util/" as u;
+
+::selection {
+  background-color: hsl(var(--selection-bg));
+  color: hsl(var(--white));
+}
+
+::-moz-selection {
+  background-color: hsl(var(--selection-bg));
+  color: hsl(var(--white));
+}
+
+html {
+  font-size: 100%;
+  font-family: v.$ff-epilogue;
+}
+body {
+  background-color: hsl(var(--white));
+  font-size: u.rem(15);
+}
+p {
+  font-size: u.rem(18);
+}
+p:not([class]) {
+  max-width: 45ch;
+}
