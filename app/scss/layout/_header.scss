@@ -79,6 +79,8 @@
 }
 .primary-navigation[data-visible="true"] {
   transform: translateX(0);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .col-1 {
   grid-column: span 1/2;
